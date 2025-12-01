@@ -23,3 +23,13 @@
     result.index.name = None
     return result.reset_index().rename(columns= {'index': 'Day'})
 ```
+
+### Group By Range Condition
+
+```python
+df['age_group'] = pd.cut(
+    df['age'],
+    bins=[0, 18, 30, 50, 100],
+    labels=['Teen', 'Young Adult', 'Adult', 'Senior']
+)
+```
