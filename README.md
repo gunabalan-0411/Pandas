@@ -53,3 +53,10 @@ def tree_node(tree: pd.DataFrame) -> pd.DataFrame:
     )
     return tree[['id', 'type']]
 ```
+
+## Merging
+
+code to rename column while grouping
+```python
+.min().rename('first_year').reset_index()
+```
